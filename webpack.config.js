@@ -45,7 +45,7 @@ module.exports = {
 
     module: {
       loaders: [
-        {test: /\.js$/, loader: 'react-hot!babel?presets[]=es2015,presets[]=react,presets[]=stage-0', exclude: /node_modules/},
+        {test: /\.js$/, loader: 'react-hot!babel?presets[]=es2015,presets[]=react,presets[]=stage-0,plugins[]=transform-decorators-legacy', exclude: /node_modules/},
         {test: /\.css$/, loader: 'react-hot!style!css'},
         {test: /\.json$/, loader: 'json'}
       ]
