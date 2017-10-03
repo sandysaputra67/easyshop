@@ -20,9 +20,7 @@ module.exports = {
     plugins: [
       new webpack.ProvidePlugin({
         React: 'react',
-        $: 'jquery',
-        GlobalService: './services/GlobalService',
-        '_': 'lodash'
+        Axios: 'axios'
       }),
       // new webpack.NoErrorsPlugin(),
       // // new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
@@ -45,8 +43,8 @@ module.exports = {
 
     module: {
       loaders: [
-        {test: /\.js$/, loader: 'react-hot!babel?presets[]=es2015,presets[]=react,presets[]=stage-0,plugins[]=transform-decorators-legacy', exclude: /node_modules/},
-        {test: /\.css$/, loader: 'react-hot!style!css'},
+        {test: /\.js$/, loader: 'babel?presets[]=es2015,presets[]=react,presets[]=stage-0,plugins[]=transform-decorators-legacy,plugins[]=react-hot-loader/babel', exclude: /node_modules/},
+        {test: /\.css$/, loader: 'babel?plugins[]=react-hot-loader/babel!style!css'},
         {test: /\.json$/, loader: 'json'}
       ]
     },
