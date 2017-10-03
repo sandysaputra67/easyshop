@@ -20,7 +20,8 @@ module.exports = {
     plugins: [
       new webpack.ProvidePlugin({
         React: 'react',
-        Axios: 'axios'
+        Axios: 'axios',
+        $: 'jquery'
       }),
       // new webpack.NoErrorsPlugin(),
       // // new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
