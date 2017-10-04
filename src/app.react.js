@@ -10,6 +10,7 @@ export default class App extends Component {
     }
   
     render(){
+      console.log(Config, 'CONFIG', process.env.NODE_ENV)
       return (
       <AppContainer>
           <div>
