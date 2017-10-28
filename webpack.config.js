@@ -1,3 +1,8 @@
+/**
+ * Requirement:
+ * Webpack @^1
+ */
+
 var webpack = require('webpack');
 
 module.exports = {
