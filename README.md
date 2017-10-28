@@ -1,8 +1,10 @@
 # React MobX Boilerplate
-Version 0.0.3 
-Date 03/10/2017 
+`@author` @azamuddin 
+`@email` mas.azamuddin@gmail.com
+`@company` The WorkSuite
+`@boilerplates`
 
-New dependencies:
+## New dependencies:
 - react v16
 - react-dom v16
 - axios 
