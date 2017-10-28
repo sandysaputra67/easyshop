@@ -26,7 +26,8 @@ module.exports = {
         path: __dirname + "/dist",
         filename: "[name].bundle.js",
         chunkFilename: "[id].bundle.js",
-        publicPath: 'http://localhost:8000/static'
+        publicPath: 'http://localhost:8000/static',
+        libraryTarget: "umd"
     },
 
 
