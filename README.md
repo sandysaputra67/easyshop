@@ -1,8 +1,8 @@
 # React MobX Boilerplate
-`@author` @azamuddin 
-`@email` mas.azamuddin@gmail.com
-`@company` The WorkSuite
-`@boilerplates`
+- `@author` @azamuddin 
+- `@email` mas.azamuddin@gmail.com
+- `@company` The WorkSuite
+- `@boilerplates`
 
 ## New dependencies:
 - react v16
