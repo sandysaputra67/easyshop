@@ -13,8 +13,12 @@ import { Categoriespage } from './pages/categories';
 import { Listingpage } from './pages/listing'
 import { SearchKeyword } from './pages/search-keyword';
 import { Wishlistpage } from './pages/wishlist';
+import Sidebar from 'react-sidebar'
+import { sidebarStore, closeSidebar } from './stores/sidebar'
+import { observer } from 'mobx-react';
+import { ToastContainer, toast } from 'react-toastify'
 
-
+@observer
 export default class App extends Component {
     constructor(props){
       super(props)
@@ -26,6 +30,7 @@ export default class App extends Component {
     render(){
       return (
       <AppContainer>
+        <Sidebar onSetOpen={e => closeSidebar()} sidebar={sidebarStore.content} open={sidebarStore.open} pullRight>
         <div style={{paddingTop: '50px'}}>
           <Router>
             <div>
@@ -37,7 +42,9 @@ export default class App extends Component {
               <Route path="/wishlist" component={Wishlistpage}/>
             </div>
           </Router>
+          <ToastContainer autoClose={5000}/>
         </div>
+        </Sidebar>
       </AppContainer>)
     }
   }

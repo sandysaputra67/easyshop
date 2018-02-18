@@ -1,6 +1,7 @@
 body{
   margin: 0px;
-  background: #eee;
+  background: #eee url("http://localhost:8000/assets/noisy.png");
+  font-family: roboto;
 }
 
 a{

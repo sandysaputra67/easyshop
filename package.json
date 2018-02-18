@@ -44,11 +44,16 @@
     "mobx-react": "^4.4.2",
     "prop-types": "^15.6.0",
     "ramda": "^0.24.1",
+    "rc-slider": "^8.6.0",
     "react": "^16.2.0",
+    "react-color": "^2.13.8",
+    "react-colors": "^0.1.2",
     "react-dom": "^16.0.0",
     "react-icons": "^2.2.7",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
+    "react-sidebar": "^2.3.2",
+    "react-toastify": "^3.3.4",
     "recompose": "^0.25.1"
   }
 }
