@@ -31,31 +31,18 @@ module.exports = {
         libraryTarget: "umd"
     },
 
-
     plugins: [
       new webpack.ProvidePlugin({
         React: 'react',
         Axios: 'axios',
-        $: 'jquery',
         Config: 'app.config'
       }),
-      // new webpack.NoErrorsPlugin(),
-      // // new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
       new webpack.DefinePlugin({
          'process.env': {
              // This has effect on the react lib size
              'NODE_ENV': JSON.stringify('development'),
          }
       }),
-      // // new webpack.optimize.UglifyJsPlugin(),
-      // new webpack.optimize.UglifyJsPlugin({
-      //   compress: {
-      //     warnings: false
-      //   },
-      //   sourceMap: false
-      // }),
-      // new webpack.optimize.OccurrenceOrderPlugin(),
-      // new webpack.optimize.DedupePlugin()
     ],
 
     module: {

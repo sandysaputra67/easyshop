@@ -1,6 +1,13 @@
-.btn-open-extension{
-  background: green;
-  text-align: center;
-  color: #fff;
-  cursor: pointer;
+body{
+  margin: 0px;
+  background: #eee;
+}
+
+a{
+  text-decoration: none;
+  color: #000
+}
+
+a:visited{
+  color: transparent
 }

@@ -1,5 +1,19 @@
 import React, { Component } from 'react'
 import {AppContainer} from 'react-hot-loader'
+import { Navbar } from './components/navbar/index';
+import { ProductItem } from './components/product-item/index';
+import { MediumContainer, NarrowContainer } from './layouts/container';
+import { dummyProducts } from './data/dummy-products';
+import { ProductCategories } from './components/product-categories/index';
+import { dummyCategories } from './data/dummy-categories';
+import {HashRouter as Router, Route} from 'react-router-dom'
+import { Homepage } from './pages/home'
+import { Searchpage } from './pages/search'
+import { Categoriespage } from './pages/categories';
+import { Listingpage } from './pages/listing'
+import { SearchKeyword } from './pages/search-keyword';
+import { Wishlistpage } from './pages/wishlist';
+
 
 export default class App extends Component {
     constructor(props){
@@ -10,16 +24,20 @@ export default class App extends Component {
     }
   
     render(){
-      console.log(Config, 'CONFIG', process.env.NODE_ENV)
       return (
       <AppContainer>
-          <div>
-          <div style={{background: '#fff',padding: '10px', height: '100%', textAlign: 'center'}}>
-            <h1>Welcome to Mobx Boilerplate by arrowfunxtion</h1>
-            Bismillah it works finally alhamdulillah
-            
-          </div>
-      </div>
+        <div style={{paddingTop: '50px'}}>
+          <Router>
+            <div>
+              <Route path="/" exact component={Homepage} />
+              <Route exact path="/search" component={Searchpage} />
+              <Route path="/search/:keyword" component={SearchKeyword} />
+              <Route exact path="/categories" component={Categoriespage} />
+              <Route path="/categories/:category_name" component={Listingpage} />
+              <Route path="/wishlist" component={Wishlistpage}/>
+            </div>
+          </Router>
+        </div>
       </AppContainer>)
     }
   }

@@ -3,10 +3,12 @@ import 'styles/global.css'
 import App from './app.react'
 
 // add new element as render point
-$('body').append('<div id="app"></div>')
+let render_point = document.createElement("div")
+    render_point.id = "app"
+  
+document.body.appendChild(render_point)
 
 // plug react app to the render point
-var render_point = document.getElementById('app');
 render(<App/>, render_point);
 
 
