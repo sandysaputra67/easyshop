@@ -1,15 +1,10 @@
-# React MobX Boilerplate
-- `@author` @azamuddin 
-- `@email` mas.azamuddin@gmail.com
-- `@company` The WorkSuite
-- `@boilerplates`
+##Instalasi (Pemasangan)
+[http://arrowfunxtion.com/registrasi-video-training-membuat-ui-toko-online-kekinian-dengan-react](http://arrowfunxtion.com/registrasi-video-training-membuat-ui-toko-online-kekinian-dengan-react)
 
-## New dependencies:
-- react v16
-- react-dom v16
-- axios 
-- recompose 
-- ramda 
-- react-hot-loader v3 beta 
-- update webpack config 
-- new npm command [dev|buil]
+`git clone https://github.com/arrowfunxtion/easyshop.git easy-shop`
+
+`cd easy-shop`
+
+`npm install`
+
+`npm run dev`
